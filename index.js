@@ -1,7 +1,9 @@
-function hello(name) {
-    alert(name)
+function hello() {
+    alert('hello')
 }
 
-function forEvent(event) {
-    console.log(event.target.innerText)
-}
+$('a').on('click', function () {
+    alert('click (111)')
+}).on('click', function () {
+    alert('click (222)')
+})

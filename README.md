@@ -1,12 +1,14 @@
-JavaScript Click Event Demo
-===========================
+JavaScript Click Add New Click Handler Demo
+===========================================
 
-对于一个链接(`<a>`)，可以在`href`处调用javascript，同时也可以在`onclick`中拿到click event.
-
-并且`onclick`比`href`要先触发。
+使用jquery给一个`<a>`添加`on('click', ()=>{})`时，会不断追加，而不是覆盖。
 
 ```
 open index.html
 ```
 
-![demo](./images/demo.jpg)
+![demo](./images/demo1.jpg)
+
+![demo](./images/demo2.jpg)
+
+![demo](./images/demo3.jpg)
