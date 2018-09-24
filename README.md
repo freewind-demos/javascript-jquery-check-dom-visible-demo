@@ -1,6 +1,10 @@
-Js Hello World Demo
-===================
+JavaScript Click Event Demo
+===========================
 
-Open `index.html` in your browser.
+对于一个链接(`<a>`)，可以在`href`处调用javascript，同时也可以在`onclick`中拿到click event.
 
-You will see "Hello, JS!" on the page.
+```
+open index.html
+```
+
+![demo](./images/demo.jpg)

@@ -1,3 +1,7 @@
-var main = document.getElementById("main");
-main.innerHTML = "Hello, JS!";
+function hello(name) {
+    alert(name)
+}
 
+function forEvent(event) {
+    console.log(event.target.innerText)
+}
