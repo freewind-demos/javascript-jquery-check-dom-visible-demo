@@ -1,8 +1,91 @@
 <html>
 <head>
+    <style>
+        #main {
+            border: 3px solid red;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        #outside {
+            position: absolute;
+            left: 300px;
+            border: 3px solid blue;
+            width: 100px;
+            height: 100px;
+        }
+
+        #hello {
+            border: 3px solid green;
+        }
+
+        #offScreen {
+            position: absolute;
+            left: 50000px;
+            border: 3px solid purple;
+            width: 100px;
+            height: 100px;
+        }
+
+        #visibilityHidden {
+            visibility: hidden;
+            border: 3px solid aqua;
+            width: 100px;
+            height: 100px;
+        }
+
+        #displayNone {
+            display: none;
+            border: 3px solid darkgoldenrod;
+            width: 100px;
+            height: 100px;
+        }
+
+        #width0 {
+            width: 0;
+            overflow: hidden;
+        }
+
+        #height0 {
+            height: 0;
+            overflow: hidden;
+        }
+
+        #size0x0 {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+    </style>
 </head>
 <body>
-<a href="#" onclick="hello(event)">Click Me</a>
+<div id="main">
+    Main (overflow:hidden)
+    <div id="outside">
+        Outside (position:absolute)
+        <span id="hello">Hello</span>
+    </div>
+</div>
+<div id="offScreen">
+    Off Screen
+</div>
+<div id="visibilityHidden">
+    Visibility:hidden
+</div>
+<div id="displayNone">
+    Display: none
+</div>
+<div id="width0">
+    Width: 0
+</div>
+<div id="height0">
+    Height: 0
+</div>
+<div id="size0x0">
+    0x0
+</div>
 <script src="./node_modules/jquery/dist/jquery.js"></script>
 <script src="./index.js"></script>
 </body>
